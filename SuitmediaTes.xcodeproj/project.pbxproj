@@ -17,6 +17,7 @@
 		35FB19BA1B214008008614BD /* awalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FB19B51B214008008614BD /* awalViewController.m */; };
 		35FB19BB1B214008008614BD /* VerifikasiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FB19B71B214008008614BD /* VerifikasiViewController.m */; };
 		35FB19BC1B214008008614BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FB19B91B214008008614BD /* ViewController.m */; };
+		35FB19BF1B2152B1008614BD /* Verifikasi2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FB19BE1B2152B1008614BD /* Verifikasi2ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		35FB19B71B214008008614BD /* VerifikasiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerifikasiViewController.m; sourceTree = "<group>"; };
 		35FB19B81B214008008614BD /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		35FB19B91B214008008614BD /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		35FB19BD1B2152B1008614BD /* Verifikasi2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Verifikasi2ViewController.h; sourceTree = "<group>"; };
+		35FB19BE1B2152B1008614BD /* Verifikasi2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Verifikasi2ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +155,8 @@
 				35FB19B71B214008008614BD /* VerifikasiViewController.m */,
 				35FB19B81B214008008614BD /* ViewController.h */,
 				35FB19B91B214008008614BD /* ViewController.m */,
+				35FB19BD1B2152B1008614BD /* Verifikasi2ViewController.h */,
+				35FB19BE1B2152B1008614BD /* Verifikasi2ViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 				354FA2DE1B200C39003B74D5 /* main.m in Sources */,
 				354FA3061B203E5C003B74D5 /* BgImageView.m in Sources */,
 				35FB19BA1B214008008614BD /* awalViewController.m in Sources */,
+				35FB19BF1B2152B1008614BD /* Verifikasi2ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

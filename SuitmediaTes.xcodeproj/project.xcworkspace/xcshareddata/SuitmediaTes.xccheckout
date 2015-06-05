@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3FC998AD-DF58-458C-8109-546DF32EC37E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SuitmediaTes</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AEFD03BB82B3EF51EF1ECE04B00355473AA7C388</key>
+		<string>https://github.com/seirifat/SuitmediaTes.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SuitmediaTes.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AEFD03BB82B3EF51EF1ECE04B00355473AA7C388</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/seirifat/SuitmediaTes.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AEFD03BB82B3EF51EF1ECE04B00355473AA7C388</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AEFD03BB82B3EF51EF1ECE04B00355473AA7C388</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SuitmediaTes</string>
+		</dict>
+	</array>
+</dict>
+</plist>

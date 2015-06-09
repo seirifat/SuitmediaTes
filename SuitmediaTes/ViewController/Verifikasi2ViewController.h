@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface Verifikasi2ViewController : UIViewController
-
+  @property NSString *nama;
+-(IBAction)unwindNama:(UIStoryboardSegue*)segue;
 @end

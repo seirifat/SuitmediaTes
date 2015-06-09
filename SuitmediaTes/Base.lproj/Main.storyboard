@@ -38,6 +38,7 @@
                                 </state>
                                 <connections>
                                     <action selector="btnSelesaiClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pX5-rl-zNW"/>
+                                    <segue destination="3nH-5H-0mM" kind="unwind" unwindAction="unwindNama:" id="uuF-Z4-U2q"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" alpha="0.59999999999999964" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Masukan nama" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fUW-5W-VDc">
@@ -89,8 +90,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="3nH-5H-0mM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2999" y="1144"/>
+            <point key="canvasLocation" x="3215" y="1144"/>
         </scene>
         <!--Verifikasi View Controller-->
         <scene sceneID="Ecm-Kz-cVv">
@@ -138,7 +140,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="RQp-H5-gUT" kind="show" id="edh-SE-VR8"/>
+                                    <segue destination="RQp-H5-gUT" kind="show" id="8OP-VH-vN9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0uc-oh-N41">
@@ -151,6 +153,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnKembaliClicked:" destination="k8W-ol-02a" eventType="touchUpInside" id="lvw-Yn-Ae4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -167,14 +172,17 @@
                             <constraint firstItem="aoG-Ia-trm" firstAttribute="top" secondItem="AQg-kY-LhD" secondAttribute="bottom" constant="48" id="nWI-PS-MAr"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="yZL-Yv-Csa"/>
                     <connections>
-                        <outlet property="btnKirimKode" destination="med-c1-fKf" id="jqH-T3-Ffn"/>
-                        <outlet property="mainView" destination="7lx-ep-20C" id="b6V-cH-eBQ"/>
+                        <outlet property="btnKembali" destination="0uc-oh-N41" id="1Ua-Bz-I8g"/>
+                        <outlet property="btnKirimKode" destination="med-c1-fKf" id="bfL-UA-5DG"/>
+                        <outlet property="mainView" destination="7lx-ep-20C" id="QZR-4j-pcm"/>
+                        <outlet property="tfNoTelp" destination="aoG-Ia-trm" id="czH-wF-cIZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EfI-hN-kdB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2199" y="325"/>
+            <point key="canvasLocation" x="1579" y="1144"/>
         </scene>
         <!--Verifikasi2 View Controller-->
         <scene sceneID="hjc-UO-zjn">
@@ -242,9 +250,20 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQn-oP-w3Z">
+                                <rect key="frame" x="272" y="489" width="56" height="30"/>
+                                <state key="normal" title="Kembali">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eeG-f1-jk4" kind="unwind" unwindAction="unwindValidasi1:" id="RMm-cX-sgc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="NQn-oP-w3Z" secondAttribute="centerX" id="0cC-i9-Hoe"/>
                             <constraint firstItem="bX3-GS-3YC" firstAttribute="top" secondItem="RqU-Bz-cFg" secondAttribute="topMargin" constant="56" id="1mc-Si-cpK"/>
                             <constraint firstItem="gxp-6H-TET" firstAttribute="top" secondItem="SHf-Oz-gP7" secondAttribute="bottom" constant="26" id="6Qa-yl-UFB"/>
                             <constraint firstAttribute="centerX" secondItem="yS5-ar-xeh" secondAttribute="centerX" id="7xS-tQ-ypz"/>
@@ -252,6 +271,7 @@
                             <constraint firstAttribute="centerX" secondItem="xXx-FZ-Gsh" secondAttribute="centerX" id="JnY-Th-gT8"/>
                             <constraint firstItem="yS5-ar-xeh" firstAttribute="top" secondItem="bX3-GS-3YC" secondAttribute="bottom" constant="40" id="bsu-xd-tSu"/>
                             <constraint firstItem="xXx-FZ-Gsh" firstAttribute="top" secondItem="gxp-6H-TET" secondAttribute="bottom" constant="77" id="hSK-0C-H5I"/>
+                            <constraint firstItem="NQn-oP-w3Z" firstAttribute="top" secondItem="xXx-FZ-Gsh" secondAttribute="bottom" constant="35" id="ij3-8d-hva"/>
                             <constraint firstAttribute="centerX" secondItem="SHf-Oz-gP7" secondAttribute="centerX" id="rMT-H5-wwH"/>
                             <constraint firstAttribute="centerX" secondItem="gxp-6H-TET" secondAttribute="centerX" id="rt9-tT-ZSU"/>
                             <constraint firstAttribute="centerX" secondItem="bX3-GS-3YC" secondAttribute="centerX" id="slg-iR-WB5"/>
@@ -259,12 +279,14 @@
                     </view>
                     <connections>
                         <outlet property="btnVerifikasi" destination="xXx-FZ-Gsh" id="bc3-T8-NZi"/>
+                        <outlet property="lblNoTelp" destination="bX3-GS-3YC" id="MAS-mx-6Dp"/>
                         <outlet property="mainView" destination="RqU-Bz-cFg" id="QD8-Xw-bpx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tIr-5M-8wR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="eeG-f1-jk4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2199" y="1144"/>
+            <point key="canvasLocation" x="2415" y="1144"/>
         </scene>
         <!--Awal View Controller-->
         <scene sceneID="RVe-UC-Ral">
@@ -305,7 +327,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="k8W-ol-02a" kind="show" id="5do-Vr-5G0"/>
+                                    <segue destination="k8W-ol-02a" kind="show" id="2av-ic-MLZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -328,7 +350,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xo4-Jb-HKp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1439" y="325"/>
+            <point key="canvasLocation" x="639" y="1144"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UDr-fp-HyV">

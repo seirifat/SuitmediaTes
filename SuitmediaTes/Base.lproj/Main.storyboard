@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_add_photo" translatesAutoresizingMaskIntoConstraints="NO" id="GN1-Gc-qmw">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="btn_add_photo" translatesAutoresizingMaskIntoConstraints="NO" id="GN1-Gc-qmw">
                                 <rect key="frame" x="248" y="232" width="105" height="105"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selamat Datang!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m06-gH-UCk">
@@ -26,7 +26,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bie-RT-SWz">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bie-RT-SWz">
                                 <rect key="frame" x="193" y="489" width="215" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="23k-kH-Jen"/>
@@ -41,7 +41,7 @@
                                     <segue destination="3nH-5H-0mM" kind="unwind" unwindAction="unwindNama:" id="uuF-Z4-U2q"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" alpha="0.59999999999999964" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Masukan nama" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fUW-5W-VDc">
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.59999999999999964" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Masukan nama" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fUW-5W-VDc">
                                 <rect key="frame" x="193" y="411" width="215" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="215" id="6uc-Rp-mVe"/>
